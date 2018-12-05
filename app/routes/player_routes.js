@@ -36,15 +36,10 @@ router.get('/players', requireToken, (req, res) => {
       // `Players` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
       // apply `.toObject` to each one
-
-      //console.log(typeof req.user.id)
-      //console.log(players[players.length - 1].owner.toString())
-      //console.log()
+      
       let currPlayer = []
 
       currPlayer = players.filter(player => player.owner.toString() === req.user.id.trim())
-
-      //console.log(currPlayer)
 
       return currPlayer[currPlayer.length - 1].toObject()
     })
