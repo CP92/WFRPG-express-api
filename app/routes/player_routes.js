@@ -41,7 +41,11 @@ router.get('/players', requireToken, (req, res) => {
 
       currPlayer = players.filter(player => player.owner.toString() === req.user.id.trim())
 
-      return currPlayer[currPlayer.length - 1].toObject()
+      if (currPlayer.length === 0) {
+        return 0
+      } else {
+      
+            return currPlayer[currPlayer.length - 1].toObject()}
     })
     // respond with status 200 and JSON of the Players
     .then(players => res.status(200).json({ players: players }))

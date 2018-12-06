@@ -29,6 +29,18 @@ const playerSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
+  strLvl: {
+    type: Number,
+    required: true
+  },
+  miningLvl: {
+    type: Number,
+    required: true
+  }, 
+  food: {
+    type: Number,
+    required: true
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
