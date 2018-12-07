@@ -44,4 +44,4 @@ API
 * DELETE method for route '/players/:id'
 
 ## Client Image
-![client](https://imgur.com/a/X4TyIFY)
+![client](https://i.imgur.com/qDSa611.png))
