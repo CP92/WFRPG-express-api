@@ -3,11 +3,11 @@
 The express Api for the WFRPG client. Allows the user save player data so they can quit and come back at a later time.
 
 CLIENT
-* [Deployed User Site]()
+* [Deployed User Site](https://www.paplog.run/WFRPG-client/)
 * [Client Repo](https://github.com/CP92/WFRPG-client)
 
 API
-* [Deployed API]()
+* [Deployed API](https://ancient-escarpment-30289.herokuapp.com)
 * [API Repo](https://github.com/CP92/WFRPG-express-api)
 
 
@@ -30,7 +30,7 @@ API
 1. No unsolved problems for the Api other than maybe formatting the schema correctly.
 
 ## ERD
-
+[ERD](https://imgur.com/SOq1B0l)
 
 ## Routes and Methods
 * POST method for route '/sign-up'
@@ -42,3 +42,6 @@ API
 * POST method for route '/players'
 * PATCH method for route '/players/:id'
 * DELETE method for route '/players/:id'
+
+## Client Image
+![client](https://imgur.com/a/X4TyIFY)
